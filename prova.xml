@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prova>
+    <instituicao>UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO</instituicao>
+    <curso>SISTEMAS DE INFORMAÇÃO</curso>
+    <professor>Sergio Serra</professor>
+    <disciplina>Web Semântica</disciplina>
+    <periodo>2024.2</periodo>
+    <instrucoes>
+        <instrucoes_gerais>
+            <pode_consultar>Sim</pode_consultar>
+            <ajuda_colega>Não</ajuda_colega>
+            <entrega_formato>PDF</entrega_formato>
+            <entrega_data>31/10/2024</entrega_data>
+            <entrega_hora>11:59</entrega_hora>
+            <envio>SIGAA</envio>
+        </instrucoes_gerais>
+        <obs>Não enviar a prova por e-mail.</obs>
+    </instrucoes>
+    <questoes>
+        <questao numero="1" valor="2">
+            <pergunta>O que são documentos XML válidos? Quais as principais características de um documento XML?</pergunta>
+        </questao>
+        <questao numero="2" valor="2">
+            <pergunta>Transforme essa prova em um documento XML válido e correto.</pergunta>
+        </questao>
+        <questao numero="3" valor="2">
+            <pergunta>Faça um DTD e um XML schema para validar o arquivo XML da questão anterior.</pergunta>
+        </questao>
+        <questao numero="4" valor="2">
+            <pergunta>Leia os artigos:
+                <artigo titulo="Ontologia e ontologias? O presente e o futuro da Ciência da Informação">
+                    <link>https://medium.com/ia-biblio-br/ontologias-para-que-cd7a73e858c2</link>
+                </artigo>
+                <artigo titulo="Panorama das ontologias do domínio agrícola: estudo a partir da Análise de Conteúdo">
+                    <link>https://revista.ibict.br/ciinf/article/view/5079/5251</link>
+                </artigo>
+            </pergunta>
+            <subpergunta>Qual a relação das ontologias com a disciplina de Web Semântica? Como são usadas no dia a dia? Explique através de exemplos práticos.</subpergunta>
+        </questao>
+        <questao numero="5" valor="2">
+            <pergunta>Analise o grafo e descreva-o através de triplas em formato RDF.</pergunta>
+            <imagem>
+                <formato>PNG</formato>
+                <dimensoes>500x235</dimensoes>
+                <bitsPorPixel>32</bitsPorPixel>
+                <cor>Truecolour com alpha</cor>
+            </imagem>
+        </questao>
+    </questoes>
+</prova>
