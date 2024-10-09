@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="prova">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="instituicao" type="xs:string"/>
+                <xs:element name="curso" type="xs:string"/>
+                <xs:element name="professor" type="xs:string"/>
+                <xs:element name="disciplina" type="xs:string"/>
+                <xs:element name="periodo" type="xs:string"/>
+                <xs:element name="instrucoes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="instrucoes_gerais">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pode_consultar" type="xs:string"/>
+                                        <xs:element name="ajuda_colega" type="xs:string"/>
+                                        <xs:element name="entrega_formato" type="xs:string"/>
+                                        <xs:element name="entrega_data" type="xs:string"/>
+                                        <xs:element name="entrega_hora" type="xs:string"/>
+                                        <xs:element name="envio" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="obs" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="questoes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="questao" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pergunta" type="xs:string"/>
+                                        <xs:element name="subpergunta" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="imagem" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="formato" type="xs:string"/>
+                                                    <xs:element name="dimensoes" type="xs:string"/>
+                                                    <xs:element name="bitsPorPixel" type="xs:int"/>
+                                                    <xs:element name="cor" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="numero" type="xs:int" use="required"/>
+                                    <xs:attribute name="valor" type="xs:decimal" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="artigo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="link" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
