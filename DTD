@@ -1,0 +1,31 @@
+<!DOCTYPE prova [
+    <!ELEMENT prova (instituicao, curso, professor, disciplina, periodo, instrucoes, questoes)>
+    <!ELEMENT instituicao (#PCDATA)>
+    <!ELEMENT curso (#PCDATA)>
+    <!ELEMENT professor (#PCDATA)>
+    <!ELEMENT disciplina (#PCDATA)>
+    <!ELEMENT periodo (#PCDATA)>
+    <!ELEMENT instrucoes (instrucoes_gerais, obs)>
+    <!ELEMENT instrucoes_gerais (pode_consultar, ajuda_colega, entrega_formato, entrega_data, entrega_hora, envio)>
+    <!ELEMENT pode_consultar (#PCDATA)>
+    <!ELEMENT ajuda_colega (#PCDATA)>
+    <!ELEMENT entrega_formato (#PCDATA)>
+    <!ELEMENT entrega_data (#PCDATA)>
+    <!ELEMENT entrega_hora (#PCDATA)>
+    <!ELEMENT envio (#PCDATA)>
+    <!ELEMENT obs (#PCDATA)>
+    <!ELEMENT questoes (questao+)>
+    <!ELEMENT questao (pergunta, subpergunta?, imagem?)>
+    <!ATTLIST questao numero CDATA #REQUIRED>
+    <!ATTLIST questao valor CDATA #REQUIRED>
+    <!ELEMENT pergunta (#PCDATA | artigo)*>
+    <!ELEMENT subpergunta (#PCDATA)>
+    <!ELEMENT imagem (formato, dimensoes, bitsPorPixel, cor)>
+    <!ELEMENT formato (#PCDATA)>
+    <!ELEMENT dimensoes (#PCDATA)>
+    <!ELEMENT bitsPorPixel (#PCDATA)>
+    <!ELEMENT cor (#PCDATA)>
+    <!ELEMENT artigo (titulo, link)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+]>
